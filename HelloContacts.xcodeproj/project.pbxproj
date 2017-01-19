@@ -12,6 +12,9 @@
 		DDF332841E30D98600A24003 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDF332821E30D98600A24003 /* Main.storyboard */; };
 		DDF332861E30D98600A24003 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDF332851E30D98600A24003 /* Assets.xcassets */; };
 		DDF332891E30D98600A24003 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDF332871E30D98600A24003 /* LaunchScreen.storyboard */; };
+		DDF332921E30EF7800A24003 /* Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDF332911E30EF7800A24003 /* Contacts.framework */; };
+		DDF332941E30F66500A24003 /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF332931E30F66500A24003 /* ContactTableViewCell.swift */; };
+		DDF332961E31042F00A24003 /* APCContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF332951E31042F00A24003 /* APCContact.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		DDF332851E30D98600A24003 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DDF332881E30D98600A24003 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DDF3328A1E30D98600A24003 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDF332911E30EF7800A24003 /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = System/Library/Frameworks/Contacts.framework; sourceTree = SDKROOT; };
+		DDF332931E30F66500A24003 /* ContactTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
+		DDF332951E31042F00A24003 /* APCContact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APCContact.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDF332921E30EF7800A24003 /* Contacts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,7 @@
 			children = (
 				DDF3327D1E30D98600A24003 /* HelloContacts */,
 				DDF3327C1E30D98600A24003 /* Products */,
+				DDF332901E30EF7800A24003 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +64,22 @@
 			children = (
 				DDF3327E1E30D98600A24003 /* AppDelegate.swift */,
 				DDF332801E30D98600A24003 /* ViewController.swift */,
+				DDF332931E30F66500A24003 /* ContactTableViewCell.swift */,
+				DDF332951E31042F00A24003 /* APCContact.swift */,
 				DDF332821E30D98600A24003 /* Main.storyboard */,
 				DDF332851E30D98600A24003 /* Assets.xcassets */,
 				DDF332871E30D98600A24003 /* LaunchScreen.storyboard */,
 				DDF3328A1E30D98600A24003 /* Info.plist */,
 			);
 			path = HelloContacts;
+			sourceTree = "<group>";
+		};
+		DDF332901E30EF7800A24003 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DDF332911E30EF7800A24003 /* Contacts.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +154,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDF332941E30F66500A24003 /* ContactTableViewCell.swift in Sources */,
 				DDF332811E30D98600A24003 /* ViewController.swift in Sources */,
 				DDF3327F1E30D98600A24003 /* AppDelegate.swift in Sources */,
+				DDF332961E31042F00A24003 /* APCContact.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
